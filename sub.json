@@ -1,0 +1,1873 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "ali",
+        "type": "udp",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dnspod",
+        "type": "udp",
+        "server": "119.29.29.29"
+      },
+      {
+        "tag": "local",
+        "type": "local"
+      }
+    ],
+    "rules": [
+      {
+        "domain_suffix": [
+          ".cn",
+          ".com.cn",
+          ".net.cn",
+          ".org.cn",
+          ".gov.cn",
+          ".edu.cn",
+          "qq.com",
+          "tencent.com",
+          "weixin.qq.com",
+          "gtimg.cn",
+          "baidu.com",
+          "bdstatic.com",
+          "bdimg.com",
+          "taobao.com",
+          "tmall.com",
+          "alicdn.com",
+          "alipay.com",
+          "aliyun.com",
+          "jd.com",
+          "360buyimg.com",
+          "bilibili.com",
+          "hdslb.com",
+          "bilivideo.com",
+          "zhihu.com",
+          "zhimg.com",
+          "weibo.com",
+          "sina.com.cn",
+          "163.com",
+          "126.com",
+          "netease.com",
+          "iqiyi.com",
+          "youku.com",
+          "douyin.com",
+          "kuaishou.com",
+          "meituan.com",
+          "dianping.com",
+          "ctrip.com",
+          "xiaomi.com",
+          "mi.com",
+          "huawei.com",
+          "oppo.com",
+          "vivo.com",
+          "csdn.net",
+          "gitee.com",
+          "jianshu.com",
+          "cnblogs.com",
+          "douban.com",
+          "ximalaya.com",
+          "qqmusic.com",
+          "kugou.com",
+          "dingtalk.com",
+          "feishu.cn",
+          "wps.cn",
+          "12306.cn",
+          "amap.com",
+          "autonavi.com",
+          "microsoft.com",
+          "windowsupdate.com",
+          "msftconnecttest.com"
+        ],
+        "server": "ali"
+      }
+    ],
+    "final": "dnspod",
+    "strategy": "ipv4_only"
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 7890
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "PROXY",
+      "outbounds": [
+        "AUTO",
+        "[日本]9",
+        "[新加坡]9原生 IP",
+        "[新加坡] 移动",
+        "[香港] 5联通网络",
+        "[香港] 8联通网络",
+        "[台湾省] 纯净住宅家宽1",
+        "[新加坡]4",
+        "[日本]10",
+        "[新加坡]5",
+        "[台湾省] 纯净住宅家宽7",
+        "[新加坡]3",
+        "[新加坡]2",
+        "[印度尼西亚] 1",
+        "[台湾省] 纯净住宅家宽3",
+        "[东帝汶]1",
+        "[文莱]1",
+        "[日本原生]1",
+        "[新加坡]6",
+        "[法国] 1住宅IP",
+        "[马来西亚]1",
+        "[新加坡]7",
+        "[挪威] 1原生 IP",
+        "[东帝汶]2",
+        "🇦🇶 ㅤㅤ",
+        "[印度尼西亚] 5原生",
+        "[菲律宾]2",
+        "[台湾省] 纯净住宅家宽5",
+        "[泰国] 原生3",
+        "[越南]2原生住宅家宽",
+        "[澳门]2",
+        "[菲律宾]1",
+        "[缅甸]2",
+        "[德国]2",
+        "[香港]2",
+        "[爱尔兰] 1",
+        "[瑞士]2",
+        "[印度尼西亚] 4原生",
+        "[墨西哥] 1住宅IP",
+        "[美国原生]4",
+        "[美国A]2原生",
+        "[加拿大]2",
+        "[香港] 4移动网络",
+        "[阿联酋 迪拜]2",
+        "[台湾省] 纯净住宅家宽2",
+        "[英国]x2",
+        "[美国A] 移动",
+        "[韩国]3",
+        "[爱尔兰] 2",
+        "[香港] 6原生",
+        "[新西兰] x1",
+        "[德国]1",
+        "[缅甸]1",
+        "[丹麦] 2原生IP",
+        "[澳大利亚]1",
+        "[澳门]1",
+        "[美国原生]3",
+        "[新加坡原生]1",
+        "[新加坡]8原生 IP",
+        "[越南]3原生住宅家宽",
+        "[土耳其]2",
+        "[尼日利亚]2",
+        "[印度尼西亚] 2",
+        "[泰国] 原生2",
+        "[日本]7",
+        "[文莱]2",
+        "[印度] 1原生",
+        "[格陵兰] 1",
+        "[台湾省] 纯净住宅家宽6",
+        "[美国A]1原生",
+        "[格陵兰] 2",
+        "[墨西哥] 3住宅IP",
+        "[南极洲]1",
+        "direct"
+      ],
+      "default": "AUTO"
+    },
+    {
+      "type": "urltest",
+      "tag": "AUTO",
+      "outbounds": [
+        "[日本]9",
+        "[新加坡]9原生 IP",
+        "[新加坡] 移动",
+        "[香港] 5联通网络",
+        "[香港] 8联通网络",
+        "[台湾省] 纯净住宅家宽1",
+        "[新加坡]4",
+        "[日本]10",
+        "[新加坡]5",
+        "[台湾省] 纯净住宅家宽7",
+        "[新加坡]3",
+        "[新加坡]2",
+        "[印度尼西亚] 1",
+        "[台湾省] 纯净住宅家宽3",
+        "[东帝汶]1",
+        "[文莱]1",
+        "[日本原生]1",
+        "[新加坡]6",
+        "[法国] 1住宅IP",
+        "[马来西亚]1",
+        "[新加坡]7",
+        "[挪威] 1原生 IP",
+        "[东帝汶]2",
+        "🇦🇶 ㅤㅤ",
+        "[印度尼西亚] 5原生",
+        "[菲律宾]2",
+        "[台湾省] 纯净住宅家宽5",
+        "[泰国] 原生3",
+        "[越南]2原生住宅家宽",
+        "[澳门]2",
+        "[菲律宾]1",
+        "[缅甸]2",
+        "[德国]2",
+        "[香港]2",
+        "[爱尔兰] 1",
+        "[瑞士]2",
+        "[印度尼西亚] 4原生",
+        "[墨西哥] 1住宅IP",
+        "[美国原生]4",
+        "[美国A]2原生",
+        "[加拿大]2",
+        "[香港] 4移动网络",
+        "[阿联酋 迪拜]2",
+        "[台湾省] 纯净住宅家宽2",
+        "[英国]x2",
+        "[美国A] 移动",
+        "[韩国]3",
+        "[爱尔兰] 2",
+        "[香港] 6原生",
+        "[新西兰] x1",
+        "[德国]1",
+        "[缅甸]1",
+        "[丹麦] 2原生IP",
+        "[澳大利亚]1",
+        "[澳门]1",
+        "[美国原生]3",
+        "[新加坡原生]1",
+        "[新加坡]8原生 IP",
+        "[越南]3原生住宅家宽",
+        "[土耳其]2",
+        "[尼日利亚]2",
+        "[印度尼西亚] 2",
+        "[泰国] 原生2",
+        "[日本]7",
+        "[文莱]2",
+        "[印度] 1原生",
+        "[格陵兰] 1",
+        "[台湾省] 纯净住宅家宽6",
+        "[美国A]1原生",
+        "[格陵兰] 2",
+        "[墨西哥] 3住宅IP",
+        "[南极洲]1"
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "5m",
+      "tolerance": 50
+    },
+    {
+      "type": "selector",
+      "tag": "R-东帝汶",
+      "outbounds": [
+        "[东帝汶]1",
+        "[东帝汶]2",
+        "direct"
+      ],
+      "default": "[东帝汶]1"
+    },
+    {
+      "type": "selector",
+      "tag": "R-丹麦",
+      "outbounds": [
+        "[丹麦] 2原生IP",
+        "direct"
+      ],
+      "default": "[丹麦] 2原生IP"
+    },
+    {
+      "type": "selector",
+      "tag": "R-其他",
+      "outbounds": [
+        "🇦🇶 ㅤㅤ",
+        "direct"
+      ],
+      "default": "🇦🇶 ㅤㅤ"
+    },
+    {
+      "type": "selector",
+      "tag": "R-加拿大",
+      "outbounds": [
+        "[加拿大]2",
+        "direct"
+      ],
+      "default": "[加拿大]2"
+    },
+    {
+      "type": "selector",
+      "tag": "R-南极洲",
+      "outbounds": [
+        "[南极洲]1",
+        "direct"
+      ],
+      "default": "[南极洲]1"
+    },
+    {
+      "type": "selector",
+      "tag": "R-印度",
+      "outbounds": [
+        "[印度] 1原生",
+        "direct"
+      ],
+      "default": "[印度] 1原生"
+    },
+    {
+      "type": "selector",
+      "tag": "R-印度尼西亚",
+      "outbounds": [
+        "[印度尼西亚] 1",
+        "[印度尼西亚] 5原生",
+        "[印度尼西亚] 4原生",
+        "[印度尼西亚] 2",
+        "direct"
+      ],
+      "default": "[印度尼西亚] 1"
+    },
+    {
+      "type": "selector",
+      "tag": "R-台湾省",
+      "outbounds": [
+        "[台湾省] 纯净住宅家宽1",
+        "[台湾省] 纯净住宅家宽7",
+        "[台湾省] 纯净住宅家宽3",
+        "[台湾省] 纯净住宅家宽5",
+        "[台湾省] 纯净住宅家宽2",
+        "[台湾省] 纯净住宅家宽6",
+        "direct"
+      ],
+      "default": "[台湾省] 纯净住宅家宽1"
+    },
+    {
+      "type": "selector",
+      "tag": "R-土耳其",
+      "outbounds": [
+        "[土耳其]2",
+        "direct"
+      ],
+      "default": "[土耳其]2"
+    },
+    {
+      "type": "selector",
+      "tag": "R-墨西哥",
+      "outbounds": [
+        "[墨西哥] 1住宅IP",
+        "[墨西哥] 3住宅IP",
+        "direct"
+      ],
+      "default": "[墨西哥] 1住宅IP"
+    },
+    {
+      "type": "selector",
+      "tag": "R-尼日利亚",
+      "outbounds": [
+        "[尼日利亚]2",
+        "direct"
+      ],
+      "default": "[尼日利亚]2"
+    },
+    {
+      "type": "selector",
+      "tag": "R-德国",
+      "outbounds": [
+        "[德国]2",
+        "[德国]1",
+        "direct"
+      ],
+      "default": "[德国]2"
+    },
+    {
+      "type": "selector",
+      "tag": "R-挪威",
+      "outbounds": [
+        "[挪威] 1原生 IP",
+        "direct"
+      ],
+      "default": "[挪威] 1原生 IP"
+    },
+    {
+      "type": "selector",
+      "tag": "R-文莱",
+      "outbounds": [
+        "[文莱]1",
+        "[文莱]2",
+        "direct"
+      ],
+      "default": "[文莱]1"
+    },
+    {
+      "type": "selector",
+      "tag": "R-新加坡",
+      "outbounds": [
+        "[新加坡]9原生 IP",
+        "[新加坡] 移动",
+        "[新加坡]4",
+        "[新加坡]5",
+        "[新加坡]3",
+        "[新加坡]2",
+        "[新加坡]6",
+        "[新加坡]7",
+        "[新加坡]8原生 IP",
+        "direct"
+      ],
+      "default": "[新加坡]9原生 IP"
+    },
+    {
+      "type": "selector",
+      "tag": "R-新加坡原生",
+      "outbounds": [
+        "[新加坡原生]1",
+        "direct"
+      ],
+      "default": "[新加坡原生]1"
+    },
+    {
+      "type": "selector",
+      "tag": "R-新西兰",
+      "outbounds": [
+        "[新西兰] x1",
+        "direct"
+      ],
+      "default": "[新西兰] x1"
+    },
+    {
+      "type": "selector",
+      "tag": "R-日本",
+      "outbounds": [
+        "[日本]9",
+        "[日本]10",
+        "[日本]7",
+        "direct"
+      ],
+      "default": "[日本]9"
+    },
+    {
+      "type": "selector",
+      "tag": "R-日本原生",
+      "outbounds": [
+        "[日本原生]1",
+        "direct"
+      ],
+      "default": "[日本原生]1"
+    },
+    {
+      "type": "selector",
+      "tag": "R-格陵兰",
+      "outbounds": [
+        "[格陵兰] 1",
+        "[格陵兰] 2",
+        "direct"
+      ],
+      "default": "[格陵兰] 1"
+    },
+    {
+      "type": "selector",
+      "tag": "R-法国",
+      "outbounds": [
+        "[法国] 1住宅IP",
+        "direct"
+      ],
+      "default": "[法国] 1住宅IP"
+    },
+    {
+      "type": "selector",
+      "tag": "R-泰国",
+      "outbounds": [
+        "[泰国] 原生3",
+        "[泰国] 原生2",
+        "direct"
+      ],
+      "default": "[泰国] 原生3"
+    },
+    {
+      "type": "selector",
+      "tag": "R-澳大利亚",
+      "outbounds": [
+        "[澳大利亚]1",
+        "direct"
+      ],
+      "default": "[澳大利亚]1"
+    },
+    {
+      "type": "selector",
+      "tag": "R-澳门",
+      "outbounds": [
+        "[澳门]2",
+        "[澳门]1",
+        "direct"
+      ],
+      "default": "[澳门]2"
+    },
+    {
+      "type": "selector",
+      "tag": "R-爱尔兰",
+      "outbounds": [
+        "[爱尔兰] 1",
+        "[爱尔兰] 2",
+        "direct"
+      ],
+      "default": "[爱尔兰] 1"
+    },
+    {
+      "type": "selector",
+      "tag": "R-瑞士",
+      "outbounds": [
+        "[瑞士]2",
+        "direct"
+      ],
+      "default": "[瑞士]2"
+    },
+    {
+      "type": "selector",
+      "tag": "R-缅甸",
+      "outbounds": [
+        "[缅甸]2",
+        "[缅甸]1",
+        "direct"
+      ],
+      "default": "[缅甸]2"
+    },
+    {
+      "type": "selector",
+      "tag": "R-美国A",
+      "outbounds": [
+        "[美国A]2原生",
+        "[美国A] 移动",
+        "[美国A]1原生",
+        "direct"
+      ],
+      "default": "[美国A]2原生"
+    },
+    {
+      "type": "selector",
+      "tag": "R-美国原生",
+      "outbounds": [
+        "[美国原生]4",
+        "[美国原生]3",
+        "direct"
+      ],
+      "default": "[美国原生]4"
+    },
+    {
+      "type": "selector",
+      "tag": "R-英国",
+      "outbounds": [
+        "[英国]x2",
+        "direct"
+      ],
+      "default": "[英国]x2"
+    },
+    {
+      "type": "selector",
+      "tag": "R-菲律宾",
+      "outbounds": [
+        "[菲律宾]2",
+        "[菲律宾]1",
+        "direct"
+      ],
+      "default": "[菲律宾]2"
+    },
+    {
+      "type": "selector",
+      "tag": "R-越南",
+      "outbounds": [
+        "[越南]2原生住宅家宽",
+        "[越南]3原生住宅家宽",
+        "direct"
+      ],
+      "default": "[越南]2原生住宅家宽"
+    },
+    {
+      "type": "selector",
+      "tag": "R-阿联酋 迪拜",
+      "outbounds": [
+        "[阿联酋 迪拜]2",
+        "direct"
+      ],
+      "default": "[阿联酋 迪拜]2"
+    },
+    {
+      "type": "selector",
+      "tag": "R-韩国",
+      "outbounds": [
+        "[韩国]3",
+        "direct"
+      ],
+      "default": "[韩国]3"
+    },
+    {
+      "type": "selector",
+      "tag": "R-香港",
+      "outbounds": [
+        "[香港] 5联通网络",
+        "[香港] 8联通网络",
+        "[香港]2",
+        "[香港] 4移动网络",
+        "[香港] 6原生",
+        "direct"
+      ],
+      "default": "[香港] 5联通网络"
+    },
+    {
+      "type": "selector",
+      "tag": "R-马来西亚",
+      "outbounds": [
+        "[马来西亚]1",
+        "direct"
+      ],
+      "default": "[马来西亚]1"
+    },
+    {
+      "type": "anytls",
+      "tag": "[日本]9",
+      "server": "rrrrrr999919.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-backup-pool-west.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[新加坡]9原生 IP",
+      "server": "xxxxxx99991014.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "xxxxxx99991014.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[新加坡] 移动",
+      "server": "x1017yd.luoyun2.com",
+      "server_port": 443,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "x1017yd.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "[香港] 5联通网络",
+      "server": "hk1031yd.luoyun2.com",
+      "server_port": 22881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk1031yd.luoyun2.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "w8uG5sRFPzP6Gb3B"
+      },
+      "up_mbps": 50,
+      "down_mbps": 200
+    },
+    {
+      "type": "anytls",
+      "tag": "[香港] 8联通网络",
+      "server": "hk1102.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk1102.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[台湾省] 纯净住宅家宽1",
+      "server": "knee.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "knee.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[新加坡]4",
+      "server": "xxxxxx444919.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "xxxxxx444919.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[日本]10",
+      "server": "rrrrrr101010r.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "rrrrrr101010r.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[新加坡]5",
+      "server": "xxxxxx55595.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "xxxxxx55595.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[台湾省] 纯净住宅家宽7",
+      "server": "995ys2dcfwzzz.luoyun2.com",
+      "server_port": 11882,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "995ys2dcfwzzz.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[新加坡]3",
+      "server": "xxxxxx3331022.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "xxxxxx3331022.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[新加坡]2",
+      "server": "x66x11-x2.ly123.edu.kg",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-backup-pool-west.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[印度尼西亚] 1",
+      "server": "xxxxxx444919.luoyun2.com",
+      "server_port": 34377,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "ydnxy0912.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[台湾省] 纯净住宅家宽3",
+      "server": "x3yzykeeka-tw2.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "x3yzykeeka-tw2.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[东帝汶]1",
+      "server": "x3yzykeeka-tw2.luoyun2.com",
+      "server_port": 36205,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "ddw881.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[文莱]1",
+      "server": "9g96ulhy68tttw4t94.luoyun2.com",
+      "server_port": 32033,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "wenlai000202.ly123.edu.kg",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[日本原生]1",
+      "server": "rrrrrr101010r.luoyun2.com",
+      "server_port": 12899,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "rr0520111.ly123.edu.kg",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[新加坡]6",
+      "server": "xxxxxx6662.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "xxxxxx6662.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[法国] 1住宅IP",
+      "server": "faguo1024.luoyun2.com",
+      "server_port": 20031,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "faguo1024.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[马来西亚]1",
+      "server": "xxxxxx3331022.luoyun2.com",
+      "server_port": 34138,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "malaixy94.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[新加坡]7",
+      "server": "xxxxxx777918.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "xxxxxx777918.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[挪威] 1原生 IP",
+      "server": "nuowei829.luoyun2.com",
+      "server_port": 20191,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "nuowei829.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[东帝汶]2",
+      "server": "xxxxxx55595.luoyun2.com",
+      "server_port": 20664,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "ddw881.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇦🇶 ㅤㅤ",
+      "server": "9g96ulhy68tttw4t94.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "9g96ulhy68tttw4t94.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[印度尼西亚] 5原生",
+      "server": "x3yzykeeka-tw2.luoyun2.com",
+      "server_port": 61851,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "ydnxywy912.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[菲律宾]2",
+      "server": "hr3ejw2bj1.luoyun2.com",
+      "server_port": 21233,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "flb5667.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[台湾省] 纯净住宅家宽5",
+      "server": "rab2ygv1nm.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "rab2ygv1nm.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[泰国] 原生3",
+      "server": "xxxxxx55595.luoyun2.com",
+      "server_port": 23435,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-edge-jp-tg828.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[越南]2原生住宅家宽",
+      "server": "xxxxxx3331022.luoyun2.com",
+      "server_port": 64915,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "yn910.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[澳门]2",
+      "server": "xxxxxx444919.luoyun2.com",
+      "server_port": 17744,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "aom811.ly123.edu.kg",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[菲律宾]1",
+      "server": "xxxxxx444919.luoyun2.com",
+      "server_port": 35514,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "flb5667.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[缅甸]2",
+      "server": "hr3ejw2bj1.luoyun2.com",
+      "server_port": 15869,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "mdassaz.ly123.edu.kg",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[德国]2",
+      "server": "xxxxxx444919.luoyun2.com",
+      "server_port": 41450,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "de915.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[香港]2",
+      "server": "byhk1015.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "byhk1015.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[爱尔兰] 1",
+      "server": "aierl813.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "aierl813.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[瑞士]2",
+      "server": "xxxxxx444919.luoyun2.com",
+      "server_port": 61430,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "rs916.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[印度尼西亚] 4原生",
+      "server": "rrrrrr111111r.luoyun2.com",
+      "server_port": 55136,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "ydnxywy912.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[墨西哥] 1住宅IP",
+      "server": "mxg1024.luoyun2.com",
+      "server_port": 20101,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "mxg1024.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[美国原生]4",
+      "server": "rrrrrr111111r.luoyun2.com",
+      "server_port": 14415,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "ynysmg.ly123.edu.kg",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[美国A]2原生",
+      "server": "rrrrrr101010r.luoyun2.com",
+      "server_port": 31540,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-edge-sgp-m825.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[加拿大]2",
+      "server": "rrrrrr999919.luoyun2.com",
+      "server_port": 64397,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "jnd831.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[香港] 4移动网络",
+      "server": "hk1031yd.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk1031yd.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[阿联酋 迪拜]2",
+      "server": "xxxxxx55595.luoyun2.com",
+      "server_port": 38702,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "ajldb0907.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[台湾省] 纯净住宅家宽2",
+      "server": "ucj87nbxk0-tw2.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "ucj87nbxk0-tw2.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[英国]x2",
+      "server": "rrrrrr101010r.luoyun2.com",
+      "server_port": 17515,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "yg816.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[美国A] 移动",
+      "server": "cdn-edge-sgp-m825.luoyun2.com",
+      "server_port": 443,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-edge-sgp-m825.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[韩国]3",
+      "server": "x3yzykeeka-tw2.luoyun2.com",
+      "server_port": 11848,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "hggk99.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[爱尔兰] 2",
+      "server": "xxxxxx3331022.luoyun2.com",
+      "server_port": 33506,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "aierl813.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[香港] 6原生",
+      "server": "hk1101.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk1101.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[新西兰] x1",
+      "server": "byhk1007.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "byhk1007.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[德国]1",
+      "server": "9g96ulhy68tttw4t94.luoyun2.com",
+      "server_port": 56464,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "de915.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[缅甸]1",
+      "server": "xxxxxx3331022.luoyun2.com",
+      "server_port": 24314,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "mdassaz.ly123.edu.kg",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[丹麦] 2原生IP",
+      "server": "ucj87nbxk0-tw2.luoyun2.com",
+      "server_port": 39775,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "dm1024.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[澳大利亚]1",
+      "server": "rrrrrr101010r.luoyun2.com",
+      "server_port": 37237,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "adly99.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[澳门]1",
+      "server": "x3yzykeeka-tw2.luoyun2.com",
+      "server_port": 23892,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "aom811.ly123.edu.kg",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[美国原生]3",
+      "server": "9g96ulhy68tttw4t94.luoyun2.com",
+      "server_port": 52369,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "ynysmg.ly123.edu.kg",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[新加坡原生]1",
+      "server": "hr3ejw2bj1.luoyun2.com",
+      "server_port": 27625,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "xjp06201.tizi001.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[新加坡]8原生 IP",
+      "server": "xxxxxx888918.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "xxxxxx888918.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[越南]3原生住宅家宽",
+      "server": "x3yzykeeka-tw2.luoyun2.com",
+      "server_port": 19816,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "yn910.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[土耳其]2",
+      "server": "xxxxxx55595.luoyun2.com",
+      "server_port": 49563,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "tu0907.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[尼日利亚]2",
+      "server": "xxxxxx3331022.luoyun2.com",
+      "server_port": 56385,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "nrly916.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[印度尼西亚] 2",
+      "server": "x3yzykeeka-tw2.luoyun2.com",
+      "server_port": 23471,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "ydnxy0912.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[泰国] 原生2",
+      "server": "x3yzykeeka-tw2.luoyun2.com",
+      "server_port": 28700,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-edge-jp-tg828.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[日本]7",
+      "server": "rrrrrr77r.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "rrrrrr77r.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[文莱]2",
+      "server": "xxxxxx3331022.luoyun2.com",
+      "server_port": 52455,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "wenlai000202.ly123.edu.kg",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[印度] 1原生",
+      "server": "9g96ulhy68tttw4t94.luoyun2.com",
+      "server_port": 14999,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "yd5156.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[格陵兰] 1",
+      "server": "x3yzykeeka-tw2.luoyun2.com",
+      "server_port": 11939,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "kll102.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[台湾省] 纯净住宅家宽6",
+      "server": "hr3ejw2bj1.luoyun2.com",
+      "server_port": 11881,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "hr3ejw2bj1.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[美国A]1原生",
+      "server": "x3yzykeeka-tw2.luoyun2.com",
+      "server_port": 28760,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-edge-sgp-m825.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[格陵兰] 2",
+      "server": "xxxxxx777918.luoyun2.com",
+      "server_port": 41032,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "kll102.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[墨西哥] 3住宅IP",
+      "server": "ucj87nbxk0-tw2.luoyun2.com",
+      "server_port": 10651,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "mxg1024.luoyun2.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "[南极洲]1",
+      "server": "9g96ulhy68tttw4t94.luoyun2.com",
+      "server_port": 49414,
+      "password": "49ee4037-7fc5-46c3-a7a9-f1f5070b9c40",
+      "tls": {
+        "enabled": true,
+        "server_name": "nanji666.ly123.edu.kg",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "domain_suffix": [
+          ".cn",
+          ".com.cn",
+          ".net.cn",
+          ".org.cn",
+          ".gov.cn",
+          ".edu.cn",
+          "qq.com",
+          "tencent.com",
+          "weixin.qq.com",
+          "gtimg.cn",
+          "baidu.com",
+          "bdstatic.com",
+          "bdimg.com",
+          "taobao.com",
+          "tmall.com",
+          "alicdn.com",
+          "alipay.com",
+          "aliyun.com",
+          "jd.com",
+          "360buyimg.com",
+          "bilibili.com",
+          "hdslb.com",
+          "bilivideo.com",
+          "zhihu.com",
+          "zhimg.com",
+          "weibo.com",
+          "sina.com.cn",
+          "163.com",
+          "126.com",
+          "netease.com",
+          "iqiyi.com",
+          "youku.com",
+          "douyin.com",
+          "kuaishou.com",
+          "meituan.com",
+          "dianping.com",
+          "ctrip.com",
+          "xiaomi.com",
+          "mi.com",
+          "huawei.com",
+          "oppo.com",
+          "vivo.com",
+          "csdn.net",
+          "gitee.com",
+          "jianshu.com",
+          "cnblogs.com",
+          "douban.com",
+          "ximalaya.com",
+          "qqmusic.com",
+          "kugou.com",
+          "dingtalk.com",
+          "feishu.cn",
+          "wps.cn",
+          "12306.cn",
+          "amap.com",
+          "autonavi.com",
+          "microsoft.com",
+          "windowsupdate.com",
+          "msftconnecttest.com"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true,
+    "default_domain_resolver": "ali"
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db"
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "default_mode": "rule"
+    }
+  }
+}
