@@ -1,0 +1,1555 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: 127.0.0.1
+mode: rule
+log-level: silent
+ipv6: false
+unified-delay: true
+tcp-concurrent: true
+find-process-mode: 'off'
+
+proxies:
+  - name: "[台湾省] 纯净住宅家宽6"
+    type: anytls
+    server: hr3ejw2bj1.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: hr3ejw2bj1.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[台湾省] 纯净住宅家宽2"
+    type: anytls
+    server: ucj87n1105.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: ucj87n1105.luoyun2.com
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    udp: true
+  - name: "[台湾省] 纯净住宅家宽4"
+    type: anytls
+    server: 9g96ulhy68tttw4t94.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: 9g96ulhy68tttw4t94.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[台湾省]  纯净住宅家宽5"
+    type: anytls
+    server: rab2ygv1nm.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: rab2ygv1nm.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[台湾省] 纯净住宅家宽3"
+    type: anytls
+    server: x3yzykeeka-tw2.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: x3yzykeeka-tw2.luoyun2.com
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    udp: true
+  - name: "[台湾省] 纯净住宅家宽7"
+    type: anytls
+    server: 995ys2dcfwzzz.luoyun2.com
+    port: 11882
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: 995ys2dcfwzzz.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[台湾省] 纯净住宅家宽1"
+    type: anytls
+    server: knee.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: knee.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[香港] 家宽住宅1"
+    type: anytls
+    server: hk11058.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: byhk1000.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[香港] 家宽住宅3"
+    type: anytls
+    server: byhk1026.luoyun2.com
+    port: 443
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: byhk1026.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[香港]2"
+    type: anytls
+    server: byhk1015.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: byhk1015.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[香港] 4"
+    type: anytls
+    server: hk1031yd.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: hk1031yd.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[香港] 5"
+    type: hysteria2
+    server: hk1031yd.luoyun2.com
+    port: 22881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: hk1031yd.luoyun2.com
+    skip-cert-verify: false
+    up: 50
+    down: 200
+    obfs: salamander
+    obfs-password: w8uG5sRFPzP6Gb3B
+  - name: "[香港] 6原生"
+    type: anytls
+    server: hk1101.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: hk1101.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[香港] 8"
+    type: anytls
+    server: hk1102.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: hk1102.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[香港] 9"
+    type: anytls
+    server: hk1104.luoyun2.com
+    port: 443
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: hk1104.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[香港] 10"
+    type: anytls
+    server: hk11058.luoyun2.com
+    port: 443
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: hk11058.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[新加坡]2"
+    type: anytls
+    server: x66x11-x2.ly123.edu.kg
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: cdn-backup-pool-west.com
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    udp: true
+  - name: "[新加坡]4"
+    type: anytls
+    server: xxxxxx444919.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: xxxxxx444919.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[新加坡]6"
+    type: anytls
+    server: xxxxxx6662.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: xxxxxx6662.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[新加坡]7"
+    type: anytls
+    server: xxxxxx777918.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: xxxxxx777918.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[新加坡]8原生 IP"
+    type: anytls
+    server: xxxxxx888918.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: xxxxxx888918.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[新加坡]9原生 IP"
+    type: anytls
+    server: xxxxxx99991014.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: xxxxxx99991014.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[新加坡原生]1"
+    type: anytls
+    server: hr3ejw2bj1.luoyun2.com
+    port: 27625
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: xjp06201.tizi001.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[新加坡原生]2"
+    type: anytls
+    server: hk11058.luoyun2.com
+    port: 27625
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: xjp06201.tizi001.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[新加坡]1"
+    type: anytls
+    server: x1017yd.luoyun2.com
+    port: 443
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: x1017yd.luoyun2.com
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    udp: true
+  - name: "[日本]1"
+    type: anytls
+    server: rrrrrr111111r.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: rrrrrr111111r.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[日本]5"
+    type: anytls
+    server: ryd1104.luoyun2.com
+    port: 443
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: ryd1104.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[日本]7"
+    type: anytls
+    server: rrrrrr77r.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: rrrrrr77r.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[日本]9"
+    type: anytls
+    server: rrrrrr999919.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: cdn-backup-pool-west.com
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    udp: true
+  - name: "[日本]10"
+    type: anytls
+    server: rrrrrr101010r.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: rrrrrr101010r.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[日本]11"
+    type: anytls
+    server: rrrrrr111111r94.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: rrrrrr111111r94.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[日本]13"
+    type: anytls
+    server: rrrrrr131313.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: cdn-backup-pool-west.com
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    udp: true
+  - name: "[日本原生]1"
+    type: anytls
+    server: rrrrrr101010r.luoyun2.com
+    port: 12899
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: rr0520111.ly123.edu.kg
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[日本原生]2"
+    type: anytls
+    server: rrrrrr101010r.luoyun2.com
+    port: 12899
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: rr0520111.ly123.edu.kg
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[韩国]3"
+    type: anytls
+    server: x3yzykeeka-tw2.luoyun2.com
+    port: 11848
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: hggk99.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[韩国]4"
+    type: anytls
+    server: hk11058.luoyun2.com
+    port: 15842
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: hggk99.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[泰国] 原生2"
+    type: anytls
+    server: x3yzykeeka-tw2.luoyun2.com
+    port: 28700
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: cdn-edge-jp-tg828.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[泰国] 原生3"
+    type: anytls
+    server: xxxxxx6662.luoyun2.com
+    port: 23435
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: cdn-edge-jp-tg828.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[美国]"
+    type: anytls
+    server: 1017mg.luoyun2.com
+    port: 443
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: 1017mg.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[美国A] 移动"
+    type: anytls
+    server: cdn-edge-sgp-m825.luoyun2.com
+    port: 443
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: cdn-edge-sgp-m825.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[美国A]1原生"
+    type: anytls
+    server: x3yzykeeka-tw2.luoyun2.com
+    port: 28760
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: cdn-edge-sgp-m825.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[美国A]2原生"
+    type: anytls
+    server: rrrrrr101010r.luoyun2.com
+    port: 31540
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: cdn-edge-sgp-m825.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[美国原生]3"
+    type: anytls
+    server: 9g96ulhy68tttw4t94.luoyun2.com
+    port: 52369
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: ynysmg.ly123.edu.kg
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[美国原生]4"
+    type: anytls
+    server: rrrrrr111111r.luoyun2.com
+    port: 14415
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: ynysmg.ly123.edu.kg
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[瑞士]2"
+    type: anytls
+    server: xxxxxx444919.luoyun2.com
+    port: 61430
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: rs916.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[瑞士]3"
+    type: anytls
+    server: rrrrrr111111r.luoyun2.com
+    port: 18275
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: rs916.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[德国]1"
+    type: anytls
+    server: 9g96ulhy68tttw4t94.luoyun2.com
+    port: 56464
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: de915.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[德国]2"
+    type: anytls
+    server: xxxxxx444919.luoyun2.com
+    port: 41450
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: de915.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[丹麦] 1原生IP"
+    type: anytls
+    server: byhk1026.luoyun2.com
+    port: 27361
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: dm1024.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[丹麦] 2原生IP"
+    type: anytls
+    server: ucj87n1105.luoyun2.com
+    port: 39775
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: dm1024.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[英国]x1"
+    type: anytls
+    server: 995ys2dcfwzzz.luoyun2.com
+    port: 53519
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: yg816.luoyun2.com
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    udp: true
+  - name: "[英国]x2"
+    type: anytls
+    server: rrrrrr101010r.luoyun2.com
+    port: 17515
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: yg816.luoyun2.com
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    udp: true
+  - name: "[爱尔兰] 1"
+    type: anytls
+    server: aierl813.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: aierl813.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[爱尔兰] 2"
+    type: anytls
+    server: xxxxxx444919.luoyun2.com
+    port: 33506
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: aierl813.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[爱尔兰] 3"
+    type: anytls
+    server: byhk1026.luoyun2.com
+    port: 44599
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: aierl813.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[土耳其]1"
+    type: anytls
+    server: 9g96ulhy68tttw4t94.luoyun2.com
+    port: 12489
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: tu0907.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[土耳其]2"
+    type: anytls
+    server: xxxxxx6662.luoyun2.com
+    port: 49563
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: tu0907.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[格陵兰] iPv6"
+    type: hysteria2
+    server: kll102.luoyun2.com
+    port: 22881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: kll102.luoyun2.com
+    skip-cert-verify: false
+    up: 50
+    down: 200
+    obfs: salamander
+    obfs-password: ZrXQjYN4WHnv4iHf
+  - name: "[格陵兰] 1"
+    type: anytls
+    server: x3yzykeeka-tw2.luoyun2.com
+    port: 11939
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: kll102.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[格陵兰] 2"
+    type: anytls
+    server: xxxxxx777918.luoyun2.com
+    port: 41032
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: kll102.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[巴西]1原生"
+    type: anytls
+    server: hr3ejw2bj1.luoyun2.com
+    port: 54708
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: baxi95654.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[巴西]2原生"
+    type: anytls
+    server: rrrrrr15rr5.luoyun2.com
+    port: 42403
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: baxi95654.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[墨西哥] 1住宅IP"
+    type: anytls
+    server: mxg1024.luoyun2.com
+    port: 20101
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: mxg1024.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[墨西哥] 2住宅IP"
+    type: anytls
+    server: byhk1026.luoyun2.com
+    port: 10651
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: mxg1024.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[墨西哥] 3住宅IP"
+    type: anytls
+    server: ucj87n1105.luoyun2.com
+    port: 10651
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: mxg1024.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[智利]2原生"
+    type: anytls
+    server: rrrrrr101010r.luoyun2.com
+    port: 43675
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: zhili666.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[智利]3原生"
+    type: anytls
+    server: hk11058.luoyun2.com
+    port: 37380
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: zhili666.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[阿联酋 迪拜]1"
+    type: anytls
+    server: hk11058.luoyun2.com
+    port: 16492
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: ajldb0907.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[阿联酋 迪拜]2"
+    type: anytls
+    server: xxxxxx6662.luoyun2.com
+    port: 38702
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: ajldb0907.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[荷兰]1"
+    type: anytls
+    server: rrrrrr111111r.luoyun2.com
+    port: 64146
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: he8861.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[荷兰]2"
+    type: anytls
+    server: hk11058.luoyun2.com
+    port: 26641
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: he8861.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[法国] 1住宅IP"
+    type: anytls
+    server: faguo1024.luoyun2.com
+    port: 20031
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: faguo1024.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[法国] 2住宅IP"
+    type: anytls
+    server: byhk1026.luoyun2.com
+    port: 13821
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: faguo1024.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[法国] 3住宅IP"
+    type: anytls
+    server: ucj87n1105.luoyun2.com
+    port: 16734
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: faguo1024.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[澳大利亚]2"
+    type: anytls
+    server: hk11058.luoyun2.com
+    port: 37893
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: adly99.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[澳大利亚]1"
+    type: anytls
+    server: rrrrrr101010r.luoyun2.com
+    port: 37237
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: adly99.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[加拿大]1"
+    type: anytls
+    server: hk11058.luoyun2.com
+    port: 53160
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: jnd831.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[加拿大]2"
+    type: anytls
+    server: rrrrrr999919.luoyun2.com
+    port: 64397
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: jnd831.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[印度] 1原生"
+    type: anytls
+    server: 9g96ulhy68tttw4t94.luoyun2.com
+    port: 14999
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: yd5156.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[印度] 2原生"
+    type: anytls
+    server: byhk1026.luoyun2.com
+    port: 41607
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: yd5156.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[印度尼西亚] 1"
+    type: anytls
+    server: xxxxxx444919.luoyun2.com
+    port: 34377
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: ydnxy0912.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[印度尼西亚] 2"
+    type: anytls
+    server: x3yzykeeka-tw2.luoyun2.com
+    port: 23471
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: ydnxy0912.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[印度尼西亚] 4原生"
+    type: anytls
+    server: rrrrrr111111r.luoyun2.com
+    port: 55136
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: ydnxywy912.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[印度尼西亚] 5原生"
+    type: anytls
+    server: x3yzykeeka-tw2.luoyun2.com
+    port: 61851
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: ydnxywy912.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[尼日利亚]2"
+    type: anytls
+    server: xxxxxx444919.luoyun2.com
+    port: 56385
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: nrly916.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[缅甸]1"
+    type: anytls
+    server: xxxxxx444919.luoyun2.com
+    port: 24314
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: mdassaz.ly123.edu.kg
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    udp: true
+  - name: "[缅甸]2"
+    type: anytls
+    server: hr3ejw2bj1.luoyun2.com
+    port: 15869
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: mdassaz.ly123.edu.kg
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    udp: true
+  - name: "[菲律宾]1"
+    type: anytls
+    server: xxxxxx444919.luoyun2.com
+    port: 35514
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: flb5667.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[菲律宾]2"
+    type: anytls
+    server: hr3ejw2bj1.luoyun2.com
+    port: 21233
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: flb5667.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[文莱]1"
+    type: anytls
+    server: 9g96ulhy68tttw4t94.luoyun2.com
+    port: 32033
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: wenlai000202.ly123.edu.kg
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[文莱]2"
+    type: anytls
+    server: xxxxxx444919.luoyun2.com
+    port: 52455
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: wenlai000202.ly123.edu.kg
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[新西兰] x1"
+    type: anytls
+    server: byhk1007.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: byhk1007.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[新西兰]1"
+    type: anytls
+    server: byhk1026.luoyun2.com
+    port: 48311
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: byhk1007.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[新西兰]3"
+    type: anytls
+    server: 995ys2dcfwzzz.luoyun2.com
+    port: 48311
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: byhk1007.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[东帝汶]1"
+    type: anytls
+    server: x3yzykeeka-tw2.luoyun2.com
+    port: 36205
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: ddw881.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[东帝汶]2"
+    type: anytls
+    server: xxxxxx6662.luoyun2.com
+    port: 20664
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: ddw881.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[柬埔寨]IPv6"
+    type: anytls
+    server: jps1025.luoyun2.com
+    port: 11881
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: jps1025.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[柬埔寨]2"
+    type: anytls
+    server: byhk1026.luoyun2.com
+    port: 64065
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: jps1025.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[马来西亚]1"
+    type: anytls
+    server: xxxxxx444919.luoyun2.com
+    port: 34138
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: malaixy94.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[马来西亚]2"
+    type: anytls
+    server: hk11058.luoyun2.com
+    port: 19953
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: malaixy94.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[越南]2原生住宅家宽"
+    type: anytls
+    server: xxxxxx444919.luoyun2.com
+    port: 64915
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: yn910.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[越南]3原生住宅家宽"
+    type: anytls
+    server: x3yzykeeka-tw2.luoyun2.com
+    port: 19816
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: yn910.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[澳门]1"
+    type: anytls
+    server: x3yzykeeka-tw2.luoyun2.com
+    port: 23892
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: aom811.ly123.edu.kg
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[澳门]2"
+    type: anytls
+    server: xxxxxx444919.luoyun2.com
+    port: 17744
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: aom811.ly123.edu.kg
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[挪威] 1原生 IP"
+    type: anytls
+    server: nuowei829.luoyun2.com
+    port: 20191
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: nuowei829.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[挪威] 2原生 IP"
+    type: anytls
+    server: 995ys2dcfwzzz.luoyun2.com
+    port: 29863
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: nuowei829.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[挪威] 3原生 IP"
+    type: anytls
+    server: hk11058.luoyun2.com
+    port: 57463
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: nuowei829.luoyun2.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[南极洲]1"
+    type: anytls
+    server: 9g96ulhy68tttw4t94.luoyun2.com
+    port: 49414
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: nanji666.ly123.edu.kg
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+  - name: "[南极洲]2"
+    type: anytls
+    server: byhk1026.luoyun2.com
+    port: 49414
+    password: 49ee4037-7fc5-46c3-a7a9-f1f5070b9c40
+    sni: nanji666.ly123.edu.kg
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    udp: true
+
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - "[台湾省] 纯净住宅家宽6"
+      - "[台湾省] 纯净住宅家宽2"
+      - "[台湾省] 纯净住宅家宽4"
+      - "[台湾省]  纯净住宅家宽5"
+      - "[台湾省] 纯净住宅家宽3"
+      - "[台湾省] 纯净住宅家宽7"
+      - "[台湾省] 纯净住宅家宽1"
+      - "[香港] 家宽住宅1"
+      - "[香港] 家宽住宅3"
+      - "[香港]2"
+      - "[香港] 4"
+      - "[香港] 5"
+      - "[香港] 6原生"
+      - "[香港] 8"
+      - "[香港] 9"
+      - "[香港] 10"
+      - "[新加坡]2"
+      - "[新加坡]4"
+      - "[新加坡]6"
+      - "[新加坡]7"
+      - "[新加坡]8原生 IP"
+      - "[新加坡]9原生 IP"
+      - "[新加坡原生]1"
+      - "[新加坡原生]2"
+      - "[新加坡]1"
+      - "[日本]1"
+      - "[日本]5"
+      - "[日本]7"
+      - "[日本]9"
+      - "[日本]10"
+      - "[日本]11"
+      - "[日本]13"
+      - "[日本原生]1"
+      - "[日本原生]2"
+      - "[韩国]3"
+      - "[韩国]4"
+      - "[泰国] 原生2"
+      - "[泰国] 原生3"
+      - "[美国]"
+      - "[美国A] 移动"
+      - "[美国A]1原生"
+      - "[美国A]2原生"
+      - "[美国原生]3"
+      - "[美国原生]4"
+      - "[瑞士]2"
+      - "[瑞士]3"
+      - "[德国]1"
+      - "[德国]2"
+      - "[丹麦] 1原生IP"
+      - "[丹麦] 2原生IP"
+      - "[英国]x1"
+      - "[英国]x2"
+      - "[爱尔兰] 1"
+      - "[爱尔兰] 2"
+      - "[爱尔兰] 3"
+      - "[土耳其]1"
+      - "[土耳其]2"
+      - "[格陵兰] iPv6"
+      - "[格陵兰] 1"
+      - "[格陵兰] 2"
+      - "[巴西]1原生"
+      - "[巴西]2原生"
+      - "[墨西哥] 1住宅IP"
+      - "[墨西哥] 2住宅IP"
+      - "[墨西哥] 3住宅IP"
+      - "[智利]2原生"
+      - "[智利]3原生"
+      - "[阿联酋 迪拜]1"
+      - "[阿联酋 迪拜]2"
+      - "[荷兰]1"
+      - "[荷兰]2"
+      - "[法国] 1住宅IP"
+      - "[法国] 2住宅IP"
+      - "[法国] 3住宅IP"
+      - "[澳大利亚]2"
+      - "[澳大利亚]1"
+      - "[加拿大]1"
+      - "[加拿大]2"
+      - "[印度] 1原生"
+      - "[印度] 2原生"
+      - "[印度尼西亚] 1"
+      - "[印度尼西亚] 2"
+      - "[印度尼西亚] 4原生"
+      - "[印度尼西亚] 5原生"
+      - "[尼日利亚]2"
+      - "[缅甸]1"
+      - "[缅甸]2"
+      - "[菲律宾]1"
+      - "[菲律宾]2"
+      - "[文莱]1"
+      - "[文莱]2"
+      - "[新西兰] x1"
+      - "[新西兰]1"
+      - "[新西兰]3"
+      - "[东帝汶]1"
+      - "[东帝汶]2"
+      - "[柬埔寨]IPv6"
+      - "[柬埔寨]2"
+      - "[马来西亚]1"
+      - "[马来西亚]2"
+      - "[越南]2原生住宅家宽"
+      - "[越南]3原生住宅家宽"
+      - "[澳门]1"
+      - "[澳门]2"
+      - "[挪威] 1原生 IP"
+      - "[挪威] 2原生 IP"
+      - "[挪威] 3原生 IP"
+      - "[南极洲]1"
+      - "[南极洲]2"
+      - DIRECT
+  - name: ♻️ 自动选择
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+    lazy: False
+    proxies:
+      - "[台湾省] 纯净住宅家宽6"
+      - "[台湾省] 纯净住宅家宽2"
+      - "[台湾省] 纯净住宅家宽4"
+      - "[台湾省]  纯净住宅家宽5"
+      - "[台湾省] 纯净住宅家宽3"
+      - "[台湾省] 纯净住宅家宽7"
+      - "[台湾省] 纯净住宅家宽1"
+      - "[香港] 家宽住宅1"
+      - "[香港] 家宽住宅3"
+      - "[香港]2"
+      - "[香港] 4"
+      - "[香港] 5"
+      - "[香港] 6原生"
+      - "[香港] 8"
+      - "[香港] 9"
+      - "[香港] 10"
+      - "[新加坡]2"
+      - "[新加坡]4"
+      - "[新加坡]6"
+      - "[新加坡]7"
+      - "[新加坡]8原生 IP"
+      - "[新加坡]9原生 IP"
+      - "[新加坡原生]1"
+      - "[新加坡原生]2"
+      - "[新加坡]1"
+      - "[日本]1"
+      - "[日本]5"
+      - "[日本]7"
+      - "[日本]9"
+      - "[日本]10"
+      - "[日本]11"
+      - "[日本]13"
+      - "[日本原生]1"
+      - "[日本原生]2"
+      - "[韩国]3"
+      - "[韩国]4"
+      - "[泰国] 原生2"
+      - "[泰国] 原生3"
+      - "[美国]"
+      - "[美国A] 移动"
+      - "[美国A]1原生"
+      - "[美国A]2原生"
+      - "[美国原生]3"
+      - "[美国原生]4"
+      - "[瑞士]2"
+      - "[瑞士]3"
+      - "[德国]1"
+      - "[德国]2"
+      - "[丹麦] 1原生IP"
+      - "[丹麦] 2原生IP"
+      - "[英国]x1"
+      - "[英国]x2"
+      - "[爱尔兰] 1"
+      - "[爱尔兰] 2"
+      - "[爱尔兰] 3"
+      - "[土耳其]1"
+      - "[土耳其]2"
+      - "[格陵兰] iPv6"
+      - "[格陵兰] 1"
+      - "[格陵兰] 2"
+      - "[巴西]1原生"
+      - "[巴西]2原生"
+      - "[墨西哥] 1住宅IP"
+      - "[墨西哥] 2住宅IP"
+      - "[墨西哥] 3住宅IP"
+      - "[智利]2原生"
+      - "[智利]3原生"
+      - "[阿联酋 迪拜]1"
+      - "[阿联酋 迪拜]2"
+      - "[荷兰]1"
+      - "[荷兰]2"
+      - "[法国] 1住宅IP"
+      - "[法国] 2住宅IP"
+      - "[法国] 3住宅IP"
+      - "[澳大利亚]2"
+      - "[澳大利亚]1"
+      - "[加拿大]1"
+      - "[加拿大]2"
+      - "[印度] 1原生"
+      - "[印度] 2原生"
+      - "[印度尼西亚] 1"
+      - "[印度尼西亚] 2"
+      - "[印度尼西亚] 4原生"
+      - "[印度尼西亚] 5原生"
+      - "[尼日利亚]2"
+      - "[缅甸]1"
+      - "[缅甸]2"
+      - "[菲律宾]1"
+      - "[菲律宾]2"
+      - "[文莱]1"
+      - "[文莱]2"
+      - "[新西兰] x1"
+      - "[新西兰]1"
+      - "[新西兰]3"
+      - "[东帝汶]1"
+      - "[东帝汶]2"
+      - "[柬埔寨]IPv6"
+      - "[柬埔寨]2"
+      - "[马来西亚]1"
+      - "[马来西亚]2"
+      - "[越南]2原生住宅家宽"
+      - "[越南]3原生住宅家宽"
+      - "[澳门]1"
+      - "[澳门]2"
+      - "[挪威] 1原生 IP"
+      - "[挪威] 2原生 IP"
+      - "[挪威] 3原生 IP"
+      - "[南极洲]1"
+      - "[南极洲]2"
+  - name: 🏠 住宅IP
+    type: select
+    proxies:
+      - "[台湾省] 纯净住宅家宽6"
+      - "[台湾省] 纯净住宅家宽2"
+      - "[台湾省] 纯净住宅家宽4"
+      - "[台湾省]  纯净住宅家宽5"
+      - "[台湾省] 纯净住宅家宽3"
+      - "[台湾省] 纯净住宅家宽7"
+      - "[台湾省] 纯净住宅家宽1"
+      - "[香港] 家宽住宅1"
+      - "[香港] 家宽住宅3"
+      - "[香港] 6原生"
+      - "[新加坡]8原生 IP"
+      - "[新加坡]9原生 IP"
+      - "[新加坡原生]1"
+      - "[新加坡原生]2"
+      - "[日本原生]1"
+      - "[日本原生]2"
+      - "[泰国] 原生2"
+      - "[泰国] 原生3"
+      - "[美国A]1原生"
+      - "[美国A]2原生"
+      - "[美国原生]3"
+      - "[美国原生]4"
+      - "[丹麦] 1原生IP"
+      - "[丹麦] 2原生IP"
+      - "[巴西]1原生"
+      - "[巴西]2原生"
+      - "[墨西哥] 1住宅IP"
+      - "[墨西哥] 2住宅IP"
+      - "[墨西哥] 3住宅IP"
+      - "[智利]2原生"
+      - "[智利]3原生"
+      - "[法国] 1住宅IP"
+      - "[法国] 2住宅IP"
+      - "[法国] 3住宅IP"
+      - "[印度] 1原生"
+      - "[印度] 2原生"
+      - "[印度尼西亚] 4原生"
+      - "[印度尼西亚] 5原生"
+      - "[越南]2原生住宅家宽"
+      - "[越南]3原生住宅家宽"
+      - "[挪威] 1原生 IP"
+      - "[挪威] 2原生 IP"
+      - "[挪威] 3原生 IP"
+      - 🚀 节点选择
+  - name: 📍 东帝汶
+    type: select
+    proxies:
+      - "[东帝汶]1"
+      - "[东帝汶]2"
+      - 🚀 节点选择
+  - name: 📍 丹麦
+    type: select
+    proxies:
+      - "[丹麦] 1原生IP"
+      - "[丹麦] 2原生IP"
+      - 🚀 节点选择
+  - name: 📍 加拿大
+    type: select
+    proxies:
+      - "[加拿大]1"
+      - "[加拿大]2"
+      - 🚀 节点选择
+  - name: 📍 南极洲
+    type: select
+    proxies:
+      - "[南极洲]1"
+      - "[南极洲]2"
+      - 🚀 节点选择
+  - name: 📍 印度
+    type: select
+    proxies:
+      - "[印度] 1原生"
+      - "[印度] 2原生"
+      - 🚀 节点选择
+  - name: 📍 印度尼西亚
+    type: select
+    proxies:
+      - "[印度尼西亚] 1"
+      - "[印度尼西亚] 2"
+      - "[印度尼西亚] 4原生"
+      - "[印度尼西亚] 5原生"
+      - 🚀 节点选择
+  - name: 📍 台湾省
+    type: select
+    proxies:
+      - "[台湾省] 纯净住宅家宽6"
+      - "[台湾省] 纯净住宅家宽2"
+      - "[台湾省] 纯净住宅家宽4"
+      - "[台湾省]  纯净住宅家宽5"
+      - "[台湾省] 纯净住宅家宽3"
+      - "[台湾省] 纯净住宅家宽7"
+      - "[台湾省] 纯净住宅家宽1"
+      - 🚀 节点选择
+  - name: 📍 土耳其
+    type: select
+    proxies:
+      - "[土耳其]1"
+      - "[土耳其]2"
+      - 🚀 节点选择
+  - name: 📍 墨西哥
+    type: select
+    proxies:
+      - "[墨西哥] 1住宅IP"
+      - "[墨西哥] 2住宅IP"
+      - "[墨西哥] 3住宅IP"
+      - 🚀 节点选择
+  - name: 📍 尼日利亚
+    type: select
+    proxies:
+      - "[尼日利亚]2"
+      - 🚀 节点选择
+  - name: 📍 巴西
+    type: select
+    proxies:
+      - "[巴西]1原生"
+      - "[巴西]2原生"
+      - 🚀 节点选择
+  - name: 📍 德国
+    type: select
+    proxies:
+      - "[德国]1"
+      - "[德国]2"
+      - 🚀 节点选择
+  - name: 📍 挪威
+    type: select
+    proxies:
+      - "[挪威] 1原生 IP"
+      - "[挪威] 2原生 IP"
+      - "[挪威] 3原生 IP"
+      - 🚀 节点选择
+  - name: 📍 文莱
+    type: select
+    proxies:
+      - "[文莱]1"
+      - "[文莱]2"
+      - 🚀 节点选择
+  - name: 📍 新加坡
+    type: select
+    proxies:
+      - "[新加坡]2"
+      - "[新加坡]4"
+      - "[新加坡]6"
+      - "[新加坡]7"
+      - "[新加坡]8原生 IP"
+      - "[新加坡]9原生 IP"
+      - "[新加坡]1"
+      - 🚀 节点选择
+  - name: 📍 新加坡原生
+    type: select
+    proxies:
+      - "[新加坡原生]1"
+      - "[新加坡原生]2"
+      - 🚀 节点选择
+  - name: 📍 新西兰
+    type: select
+    proxies:
+      - "[新西兰] x1"
+      - "[新西兰]1"
+      - "[新西兰]3"
+      - 🚀 节点选择
+  - name: 📍 日本
+    type: select
+    proxies:
+      - "[日本]1"
+      - "[日本]5"
+      - "[日本]7"
+      - "[日本]9"
+      - "[日本]10"
+      - "[日本]11"
+      - "[日本]13"
+      - 🚀 节点选择
+  - name: 📍 日本原生
+    type: select
+    proxies:
+      - "[日本原生]1"
+      - "[日本原生]2"
+      - 🚀 节点选择
+  - name: 📍 智利
+    type: select
+    proxies:
+      - "[智利]2原生"
+      - "[智利]3原生"
+      - 🚀 节点选择
+  - name: 📍 柬埔寨
+    type: select
+    proxies:
+      - "[柬埔寨]IPv6"
+      - "[柬埔寨]2"
+      - 🚀 节点选择
+  - name: 📍 格陵兰
+    type: select
+    proxies:
+      - "[格陵兰] iPv6"
+      - "[格陵兰] 1"
+      - "[格陵兰] 2"
+      - 🚀 节点选择
+  - name: 📍 法国
+    type: select
+    proxies:
+      - "[法国] 1住宅IP"
+      - "[法国] 2住宅IP"
+      - "[法国] 3住宅IP"
+      - 🚀 节点选择
+  - name: 📍 泰国
+    type: select
+    proxies:
+      - "[泰国] 原生2"
+      - "[泰国] 原生3"
+      - 🚀 节点选择
+  - name: 📍 澳大利亚
+    type: select
+    proxies:
+      - "[澳大利亚]2"
+      - "[澳大利亚]1"
+      - 🚀 节点选择
+  - name: 📍 澳门
+    type: select
+    proxies:
+      - "[澳门]1"
+      - "[澳门]2"
+      - 🚀 节点选择
+  - name: 📍 爱尔兰
+    type: select
+    proxies:
+      - "[爱尔兰] 1"
+      - "[爱尔兰] 2"
+      - "[爱尔兰] 3"
+      - 🚀 节点选择
+  - name: 📍 瑞士
+    type: select
+    proxies:
+      - "[瑞士]2"
+      - "[瑞士]3"
+      - 🚀 节点选择
+  - name: 📍 缅甸
+    type: select
+    proxies:
+      - "[缅甸]1"
+      - "[缅甸]2"
+      - 🚀 节点选择
+  - name: 📍 美国
+    type: select
+    proxies:
+      - "[美国]"
+      - 🚀 节点选择
+  - name: 📍 美国A
+    type: select
+    proxies:
+      - "[美国A] 移动"
+      - "[美国A]1原生"
+      - "[美国A]2原生"
+      - 🚀 节点选择
+  - name: 📍 美国原生
+    type: select
+    proxies:
+      - "[美国原生]3"
+      - "[美国原生]4"
+      - 🚀 节点选择
+  - name: 📍 英国
+    type: select
+    proxies:
+      - "[英国]x1"
+      - "[英国]x2"
+      - 🚀 节点选择
+  - name: 📍 荷兰
+    type: select
+    proxies:
+      - "[荷兰]1"
+      - "[荷兰]2"
+      - 🚀 节点选择
+  - name: 📍 菲律宾
+    type: select
+    proxies:
+      - "[菲律宾]1"
+      - "[菲律宾]2"
+      - 🚀 节点选择
+  - name: 📍 越南
+    type: select
+    proxies:
+      - "[越南]2原生住宅家宽"
+      - "[越南]3原生住宅家宽"
+      - 🚀 节点选择
+  - name: 📍 阿联酋
+    type: select
+    proxies:
+      - "[阿联酋 迪拜]1"
+      - "[阿联酋 迪拜]2"
+      - 🚀 节点选择
+  - name: 📍 韩国
+    type: select
+    proxies:
+      - "[韩国]3"
+      - "[韩国]4"
+      - 🚀 节点选择
+  - name: 📍 香港
+    type: select
+    proxies:
+      - "[香港] 家宽住宅1"
+      - "[香港] 家宽住宅3"
+      - "[香港]2"
+      - "[香港] 4"
+      - "[香港] 5"
+      - "[香港] 6原生"
+      - "[香港] 8"
+      - "[香港] 9"
+      - "[香港] 10"
+      - 🚀 节点选择
+  - name: 📍 马来西亚
+    type: select
+    proxies:
+      - "[马来西亚]1"
+      - "[马来西亚]2"
+      - 🚀 节点选择
+
+rules:
+  - DOMAIN-SUFFIX,lan,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-KEYWORD,-cn,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,🚀 节点选择
